@@ -1,4 +1,7 @@
-Goal ::= Background<a,b> #32 Prompt;
+Goal ::=
+    <. prompt = 1 .> Background<a,b> #32 Prompt
+    | <. graph = 1 .> CaseII<a,b>
+;
 
 Background<a, b> ::= Character<a> " and " Character<b> " have an interaction. Later, because of this interaction, " Character<a>  " does something to " Character<b> ".";
 
@@ -8,3 +11,20 @@ Character<a> ::=
     <. a = 1 .> "Alice"
     | <. a = 2 .> "Bob"
 ;
+
+CaseII<a,b> ::=
+    NodeDef
+    "A, " Character<a> ", 0" #10
+    "B, " Character<b> ", 0" #10
+    "e1, e1, 1" #10
+    "e2, e2, 2" #10
+    EdgeDef
+    "A, e1, 3.0" #10
+    "B, e1, 1.0" #10
+    "e1, e2, 3.0" #10
+    "e1, e2, 1.0"
+;
+
+NodeDef ::= "nodedef>name VARCHAR,label VARCHAR,time INT" #10;
+EdgeDef ::= "edgedef>node1 VARCHAR,node2 VARCHAR,weight DOUBLE" #10;
+
