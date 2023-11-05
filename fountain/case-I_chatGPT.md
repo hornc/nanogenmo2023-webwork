@@ -34,3 +34,4 @@ During their exploration, Alice and Bob share stories, laughter, and even a few 
 * The AI has let Alice and Bob meet too early, they interact _before_ they go to the mansion, which seems to diminish the chance / surprise of them meeting at the mansion. This version implies that Alice and Bob are already sharing everything that happens with each other, or that A, B, C, and D are all effectively in the same sphere -- it diminishes the "coming together" that the plot threads are supposed to represent.
 * The content is remarkably similar to Keeler's example, down to an old book being involved...
 * The AI has introduced motivating objects that might very well have been represented by a plot line by Keeler. It's possibly my fault that I haven't created a possible distinction between people and objects yet. In Keeler's case-I example, one of the letters and plot lines _was_ the book (a Vindelinus).
+* Word count (excuding headings and framing chat): 301 words.
