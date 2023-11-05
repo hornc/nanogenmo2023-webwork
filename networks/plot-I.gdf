@@ -1,0 +1,15 @@
+nodedef>name VARCHAR,label VARCHAR,time INT
+A, A, 0
+B, B, 0
+C, C, 0
+D, D, 0
+e1, e1, 1
+e2, e2, 2
+e3, e3, 3
+edgedef>node1 VARCHAR,node2 VARCHAR,weight DOUBLE
+A, e1
+C, e1
+B, e2, 3.0
+D, e2
+e1, e3
+e2, e3, 3.0
