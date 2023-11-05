@@ -1,0 +1,58 @@
+Goal ::=
+    <. prompt = 1 .> Prompt<case,a,b> 
+    | <. graph = 1 .> Graph<case,a,b>
+;
+
+Prompt<case,a,b> ::=
+    <. c = 3 .> <. d = 4 .>
+    ( <. case = 1 .>
+      Character<c> " takes some action which compels " Character<a> " to go to a particular location." #10
+      Character<d> " takes some action which compels " Character<b> " to be in the same location." #10
+      "Describe " Character<c> "'s action. "
+      "Describe " Character<d> "'s action. "
+      "Describe " Character<a> " going to that location. "
+      "Describe how " Character<a> " interacts with " Character<b> " at the location."
+    | <. case = 2 .>
+      Character<a> " and " Character<b> " have an interaction. Later, because of this interaction, " Character<a>  " does something to " Character<b> ". "
+      "Describe the first interaction. Describe the second interaction."
+    )
+;
+
+Character<a> ::=
+    <. a = 1 .> "Alice"
+    | <. a = 2 .> "Bob"
+    | <. a = 3 .> "Clarise"
+    | <. a = 4 .> "Dylan"
+;
+
+Graph<case,a,b> ::=
+    <. c = 3 .> <. d = 4 .>
+    NodeDef     
+    "A, " Character<a> ", 0" #10
+    "B, " Character<b> ", 0" #10
+    "e1, e1, 1" #10
+    "e2, e2, 2" #10
+    ( <. case = 1 .>
+       "C, " Character<c> ", 0" #10
+       "D, " Character<d> ", 0" #10
+       "e3, e3, 3" #10
+       EdgeDef
+       "A, e1, 3.0" #10
+       "C, e1, 1.0" #10
+       "B, e2, 1.0" #10
+       "D, e2, 1.0" #10
+       "e1, e3, 3.0" #10
+       "e2, e3, 1.0"
+
+    | <. case = 2 .>
+        EdgeDef
+        "A, e1, 3.0" #10
+        "B, e1, 1.0" #10
+        "e1, e2, 3.0" #10
+        "e1, e2, 1.0"
+    )
+;
+
+NodeDef ::= "nodedef>name VARCHAR,label VARCHAR,time INT" #10;
+EdgeDef ::= "edgedef>node1 VARCHAR,node2 VARCHAR,weight DOUBLE" #10;
+
