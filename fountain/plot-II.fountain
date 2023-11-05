@@ -1,0 +1,10 @@
+Goal ::= Background<a,b> #32 Prompt;
+
+Background<a, b> ::= Character<a> " and " Character<b> " have an interaction. Later, because of this interaction, " Character<a>  " does something to " Character<b> ".";
+
+Prompt ::= "Describe the first interaction. Describe the second interaction.";
+
+Character<a> ::=
+    <. a = 1 .> "Alice"
+    | <. a = 2 .> "Bob"
+;
