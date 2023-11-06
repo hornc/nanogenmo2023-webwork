@@ -143,6 +143,7 @@ Graph<case,a,b> ::=
         <. c = 6 .> <. e = 5 .> Nlist<c,e>
         // 6 characters
         // 5 events
+        // XIII (b)
     | <. case = 15 .>
         // Scheherazade tale, p. 56
         // pseudo-web
