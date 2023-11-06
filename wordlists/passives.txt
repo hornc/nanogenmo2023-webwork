@@ -1,0 +1,26 @@
+Artwork
+Book
+Chest
+Dagger
+Earring
+File
+Gloves
+Handbag
+Insect
+Jersey
+Knife
+Letter
+Map
+Notebook
+Oil painting
+Papers
+Quilt
+Raincoat
+Satchel
+Thimble
+Umbrella
+Valise
+Watch
+X
+Y
+Zoetrope
