@@ -1,6 +1,11 @@
+// H. S. Keeler's 15 Elemental Plot Combinations
+// https://site.xavier.edu/polt/keeler/OnWebwork.pdf pp. 49–57
+// generated as either GDF (output=1) or text prompts (output=2)
+// Specify plot case with case=n (n=1–15)
+
 Goal ::=
-    <. prompt = 1 .> Prompt<case,a,b> 
-    | <. graph = 1 .> Graph<case,a,b>
+    <. output = 2 .> Prompt<case,a,b>
+    | <. output = 1 .> Graph<case,a,b>
 ;
 
 Prompt<case,a,b> ::=
@@ -15,6 +20,10 @@ Prompt<case,a,b> ::=
     | <. case = 2 .>
       Character<a> " and " Character<b> " have an interaction. Later, because of this interaction, " Character<a>  " does something to " Character<b> ". "
       "Describe the first interaction. Describe the second interaction."
+    | <. case = 3 .>
+      Character<a> " and " Character<b> " have an interaction. Later, because of this interaction, " Character<a>  " does something to " Character<b> ". "
+      "Still later, a third event occurs between " Character<a> " and " Character<b> " as a result of this second event. "
+      "Describe the first interaction. Describe the second interaction. Describe the third interaction"
     )
 ;
 
@@ -50,6 +59,15 @@ Graph<case,a,b> ::=
         "B, e1, 1.0" #10
         "e1, e2, 3.0" #10
         "e1, e2, 1.0"
+    | <. case = 3 .>
+        "e3, e3, 3" #10
+        EdgeDef
+        "A, e1, 3.0" #10
+        "B, e1, 1.0" #10
+        "e1, e2, 3.0" #10
+        "e1, e2, 1.0" #10
+        "e2, e3, 1.0" #10
+        "e2, e3, 3.0" #10
     )
 ;
 
