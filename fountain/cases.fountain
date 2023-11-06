@@ -4,8 +4,11 @@
 // Specify plot case with case=n (n=1–15)
 
 Goal ::=
-    <. output = 2 .> Prompt<case,a,b>
-    | <. output = 1 .> Graph<case,a,b>
+    <. a = 1 .> <. b = 2 .>
+    (
+      <. output = 2 .> Prompt<case,a,b>
+      | <. output = 1 .> Graph<case,a,b>
+    )
 ;
 
 Prompt<case,a,b> ::=
@@ -68,6 +71,52 @@ Graph<case,a,b> ::=
         "e1, e2, 1.0" #10
         "e2, e3, 1.0" #10
         "e2, e3, 3.0" #10
+    | <. case = 4 .>
+        "C, " Character<c> ", 0" #10
+        "e3, e3, 3" #10
+        EdgeDef
+        "C, e1, 1.0" #10
+        "B, e1, 1.0" #10
+        "A, e2, 3.0" #10
+        "e1, e2, 1.0" #10
+        "e1, e3, 1.0"
+    | <. case = 5 .>
+        // 6 characters
+        // 5 events
+        EdgeDef
+    | <. case = 6 .>
+        // 6 characters
+        // 5 events
+    | <. case = 7 .>
+        // 5 characters
+        // 4 events
+    | <. case = 8 .>
+        // 4 characters
+        // 4 events
+        // New Threads Born, p. 53
+    | <. case = 9 .>
+        // 6 characters
+        // 4 events
+    | <. case = 10 .>
+        // 6 characters
+        // 4 events
+    | <. case = 11 .>
+        // 4 characters
+        // 3 events
+    | <. case = 12 .>
+        // 4 characters
+        // 4 events
+    | <. case = 13 .>
+        // 6 characters
+        // 5 events
+        // Row of bricks
+    | <. case = 14 .>
+        // 6 characters
+        // 5 events
+    | <. case = 15 .>
+        // Scheherazade tale, p. 56
+        // pseudo-web
+        // recursive ? web within a web?
     )
 ;
 
