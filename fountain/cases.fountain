@@ -31,40 +31,64 @@ Prompt<case,a,b> ::=
 ;
 
 Character<a> ::=
-    <. a = 1 .> "Alice"
+      <. a = 1 .> "Alice"
     | <. a = 2 .> "Bob"
     | <. a = 3 .> "Clarise"
     | <. a = 4 .> "Dylan"
+    | <. a = 5 .> "Ernest"
+    | <. a = 6 .> "Fleur"
+;
+
+Node<a> ::=
+      <. a = 1 .> "A"
+    | <. a = 2 .> "B"
+    | <. a = 3 .> "C"
+    | <. a = 4 .> "D"
+    | <. a = 5 .> "E"
+    | <. a = 6 .> "F"
+;
+
+Event<a> ::=
+      <. a = 1 .> "1"
+    | <. a = 2 .> "2"
+    | <. a = 3 .> "3"
+    | <. a = 4 .> "4"
+    | <. a = 5 .> "5"
+    | <. a = 6 .> "6"
+;
+
+Clist<n> ::=
+    <. c = 1 .> {
+      Node<c> ", " Character<c> ", 0" #10
+      <. c += 1 .> }  <. c > n .>
+;
+
+Nlist<a, b> ::=
+    NodeDef
+    Clist<a>
+    <. c = 1 .> {
+      "e" Event<c> ", e" Event<c> ", " Event<c> #10
+      <. c += 1 .> }  <. c > b .>
+    EdgeDef
 ;
 
 Graph<case,a,b> ::=
-    <. c = 3 .> <. d = 4 .>
-    NodeDef     
-    "A, " Character<a> ", 0" #10
-    "B, " Character<b> ", 0" #10
-    "e1, e1, 1" #10
-    "e2, e2, 2" #10
     ( <. case = 1 .>
-       "C, " Character<c> ", 0" #10
-       "D, " Character<d> ", 0" #10
-       "e3, e3, 3" #10
-       EdgeDef
+       <. c = 4 .> <. e = 3 .> Nlist<c,e>
        "A, e1, 3.0" #10
        "C, e1, 1.0" #10
        "B, e2, 1.0" #10
        "D, e2, 1.0" #10
        "e1, e3, 3.0" #10
        "e2, e3, 1.0"
-
     | <. case = 2 .>
-        EdgeDef
+        <. c = 2 .> <. e = 2 .> Nlist<c,e>
         "A, e1, 3.0" #10
         "B, e1, 1.0" #10
         "e1, e2, 3.0" #10
         "e1, e2, 1.0"
     | <. case = 3 .>
-        "e3, e3, 3" #10
-        EdgeDef
+        <. c = 2 .> <. e = 3 .> Nlist<c,e>
         "A, e1, 3.0" #10
         "B, e1, 1.0" #10
         "e1, e2, 3.0" #10
@@ -72,45 +96,51 @@ Graph<case,a,b> ::=
         "e2, e3, 1.0" #10
         "e2, e3, 3.0" #10
     | <. case = 4 .>
-        "C, " Character<c> ", 0" #10
-        "e3, e3, 3" #10
-        EdgeDef
+        <. c = 3 .> <. e = 3 .> Nlist<c,e>
         "C, e1, 1.0" #10
         "B, e1, 1.0" #10
         "A, e2, 3.0" #10
         "e1, e2, 1.0" #10
         "e1, e3, 1.0"
     | <. case = 5 .>
-        // 6 characters
+        <. c = 6 .> <. e = 5 .> Nlist<c,e>
         // 5 events
-        EdgeDef
     | <. case = 6 .>
+        <. c = 6 .> <. e = 5 .> Nlist<c,e>
         // 6 characters
         // 5 events
     | <. case = 7 .>
+        <. c = 5 .> <. e = 4 .> Nlist<c,e>
         // 5 characters
         // 4 events
     | <. case = 8 .>
+        <. c = 4 .> <. e = 4 .> Nlist<c,e>
         // 4 characters
         // 4 events
         // New Threads Born, p. 53
     | <. case = 9 .>
+        <. c = 6 .> <. e = 4 .> Nlist<c,e>
         // 6 characters
         // 4 events
     | <. case = 10 .>
+        <. c = 6 .> <. e = 4 .> Nlist<c,e>
         // 6 characters
         // 4 events
     | <. case = 11 .>
+        <. c = 4 .> <. e = 3 .> Nlist<c,e>
         // 4 characters
         // 3 events
     | <. case = 12 .>
+        <. c = 4 .> <. e = 4 .> Nlist<c,e>
         // 4 characters
         // 4 events
     | <. case = 13 .>
+        <. c = 6 .> <. e = 5 .> Nlist<c,e>
         // 6 characters
         // 5 events
         // Row of bricks
     | <. case = 14 .>
+        <. c = 6 .> <. e = 5 .> Nlist<c,e>
         // 6 characters
         // 5 events
     | <. case = 15 .>
