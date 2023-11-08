@@ -83,29 +83,33 @@ NodeList<a, b, s> ::=
 Graph<case,a,b> ::=
     <. h = 1 .>  // set the hero
     ( <. case = 1 .>
-       <. c = 4 .> <. e = 3 .> NodeList<c,e,s>
-       "A, e1, 3.0" #10
-       "C, e1, 1.0" #10
-       "B, e2, 1.0" #10
-       "D, e2, 1.0" #10
-       "e1, e3, 3.0" #10
-       "e2, e3, 1.0"
+        <. && c = 4, e = 3 .> NodeList<c,e,s>
+        #10
+        "A, e1, 3.0" #10
+        "C, e1, 1.0" #10
+        "B, e2, 1.0" #10
+        "D, e2, 1.0" #10
+        "e1, e3, 3.0" #10
+        "e2, e3, 1.0"
     | <. case = 2 .>
-        <. c = 2 .> <. e = 2 .> NodeList<c,e,s>
+        <. && c = 2, e = 2 .> NodeList<c,e,s>
+        #10
         "A, e1, 3.0" #10
         "B, e1, 1.0" #10
         "e1, e2, 3.0" #10
         "e1, e2, 1.0"
     | <. case = 3 .>
-        <. c = 2 .> <. e = 3 .> NodeList<c,e,s>
+        <. && c = 2, e = 3 .> NodeList<c,e,s>
+        #10
         "A, e1, 3.0" #10
         "B, e1, 1.0" #10
         "e1, e2, 3.0" #10
         "e1, e2, 1.0" #10
         "e2, e3, 1.0" #10
-        "e2, e3, 3.0" #10
+        "e2, e3, 3.0"
     | <. case = 4 .>
-        <. c = 3 .> <. e = 3 .> NodeList<c,e,s>
+        #10
+        <. && c = 3, e = 3 .> NodeList<c,e,s>
         "C, e1, 1.0" #10
         "B, e1, 1.0" #10
         "A, e2, 3.0" #10
@@ -115,19 +119,35 @@ Graph<case,a,b> ::=
         <. s = 24 .>
         <. && c = 6, e = 5 .> NodeList<c,e,s>
         // 5 events
-        <. && t1  = 1, t2  = 3 .> <. && e1 = 0, e2 = 0 .> <. d = 25 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 += 1, t2 += 1 .> <. d -= 1 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t2 += 2, e1 += 24 .> <. d += 2 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t2 -= 1, e1 += 1 .> <. && d += 1, t1 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t2 -= 3, e1 += 2 .> <. && d += 1, e2 += 26 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && e1 = 0, e2 = 0 .>
+        <. && t1  = 2, t2  = 4 .> <. d = 24 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 -= 1, t2 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t2 += 2, e1 += 24 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t2 -= 1, e1 += 1 .> <. t1 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t2 -= 3, e1 += 2 .> <. e2 += 26 .> Knot2<t1, e1, t2, e2, d, h>
     | <. case = 6 .>
-        <. c = 6 .> <. e = 5 .> NodeList<c,e,s>
+        <. && s = 24, d = 24 .>
+        <. && c = 6, e = 5 .> NodeList<c,e,s>
         // 6 characters
         // 5 events
+        <. && e1 = 0, e2 = 0 .>
+        <. && t1  = 6, t2  = 4 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 -= 1, t2 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 -= 1, t2 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 -= 1, t2 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
+        <. t1 -= 1 .>             Knot2<t1, e1, t2, e2, d, h>
+        // Fix me! (Needs e1 and e2 set at some point)
     | <. case = 7 .>
-        <. c = 5 .> <. e = 4 .> NodeList<c,e,s>
+        <. && s = 25, d = 25 .>
+        <. && e1 = 0, e2 = 0 .>
+        <. && c = 5, e = 4 .> NodeList<c,e,s>
         // 5 characters
         // 4 events
+        <. && t1  = 2, t2  = 3 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 += 3, t2 += 1 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 -= 4, t2 += 0 .> Knot2<t1, e1, t2, e2, d, h>
+        // TODO: fix and finish me!
+
     | <. case = 8 .>
         <. c = 4 .> <. e = 4 .> NodeList<c,e,s>
         // 4 characters
@@ -174,17 +194,17 @@ WOther ::= "1.0";
 Knot2<t1, e1, t2, e2, d, h> ::=
    Edge<t1, e1, d, h>
    Edge<t2, e2, d, h>
+   <. d += 1 .>
 ;
 
 
 Edge<t, e, d, h> ::=
+   #10
    ( <. e = 0 .> Node<t> | <. e > 0 .> "e" Event<e> )
    ", e" Event<d> ", "
    ( <. t = h .> WHero | <. t < h .> WOther | <. t > h .> WOther )
-   #10
 ;
 
 
 NodeDef ::= "nodedef>name VARCHAR,label VARCHAR,time INT" #10;
-EdgeDef ::= "edgedef>node1 VARCHAR,node2 VARCHAR,weight DOUBLE" #10;
-
+EdgeDef ::= "edgedef>node1 VARCHAR,node2 VARCHAR,weight DOUBLE";
