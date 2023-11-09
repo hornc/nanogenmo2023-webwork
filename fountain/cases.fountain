@@ -70,13 +70,14 @@ Clist<n> ::=
 ;
 
 NodeList<a, b, s> ::=
+    <. n = s .>
     NodeDef
-    ( <. s = 1 .> | <. s > 1 .> )
-    <. b += s .>
+    ( <. n = 1 .> | <. n > 1 .> )
+    <. b += n .>
     Clist<a>
     {
-      "e" Event<s> ", e" Event<s> ", " Event<s> #10
-      <. s += 1 .> }  <. s >= b .>
+      "e" Event<n> ", e" Event<n> ", " Event<n> #10
+      <. n += 1 .> }  <. n >= b .>
     EdgeDef
 ;
 
@@ -116,8 +117,8 @@ Graph<case,a,b> ::=
         "e1, e2, 1.0" #10
         "e1, e3, 1.0"
     | <. case = 5 .>
-        <. s = 24 .>
-        <. && c = 6, e = 5 .> NodeList<c,e,s>
+        <. d = 24 .>
+        <. && c = 6, e = 5 .> NodeList<c,e,d>
         // 5 events
         <. && e1 = 0, e2 = 0 .>
         <. && t1  = 2, t2  = 4 .> <. d = 24 .> Knot2<t1, e1, t2, e2, d, h>
@@ -126,23 +127,20 @@ Graph<case,a,b> ::=
         <. && t2 -= 1, e1 += 1 .> <. t1 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
         <. && t2 -= 3, e1 += 2 .> <. e2 += 26 .> Knot2<t1, e1, t2, e2, d, h>
     | <. case = 6 .>
-        <. && s = 24, d = 24 .>
-        <. && c = 6, e = 5 .> NodeList<c,e,s>
-        // 6 characters
-        // 5 events
+        // 6 characters, 5 events
+        <. && c = 6, e = 5 .> <. d = 24 .> NodeList<c,e,d>
         <. && e1 = 0, e2 = 0 .>
-        <. && t1  = 6, t2  = 4 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 -= 1, t2 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 -= 1, t2 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 -= 1, t2 -= 1 .> Knot2<t1, e1, t2, e2, d, h>
-        <. t1 -= 1 .>             Knot2<t1, e1, t2, e2, d, h>
-        // Fix me! (Needs e1 and e2 set at some point)
+        <. i = 1 .> {
+          (  <. i = 1 .><. && t1  = 6, t2  = 4 .>
+            |<. i = 2 .><. && t1 += 5, t2 += 3 .>
+            |<. i = 3 .><. && t1 += 4, t2 += 2 .><. e1 += 24 .>
+            |<. i = 4 .><. && t1 += 3, t2 += 1 .><. e1 += 25 .>
+            |<. i = 5 .><. && t1 += 2, t2 += 1 .><. && e1 += 26, e2 += 27 .>
+          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 5 .>
     | <. case = 7 .>
-        <. && s = 25, d = 25 .>
+        // 5 characters, 4 events
+        <. && c = 5, e = 4 .> <. d = 25 .> NodeList<c,e,d>
         <. && e1 = 0, e2 = 0 .>
-        <. && c = 5, e = 4 .> NodeList<c,e,s>
-        // 5 characters
-        // 4 events
         <. && t1  = 2, t2  = 3 .> Knot2<t1, e1, t2, e2, d, h>
         <. && t1 += 4, t2 += 5 .> Knot2<t1, e1, t2, e2, d, h>
         <. && t1 += 1, t2 += 4 .> <. e2 += 26 .> Knot2<t1, e1, t2, e2, d, h>
