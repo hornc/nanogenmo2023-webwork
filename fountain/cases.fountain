@@ -144,10 +144,9 @@ Graph<case,a,b> ::=
         // 5 characters
         // 4 events
         <. && t1  = 2, t2  = 3 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 += 3, t2 += 1 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 -= 4, t2 += 0 .> Knot2<t1, e1, t2, e2, d, h>
-        // TODO: fix and finish me!
-
+        <. && t1 += 4, t2 += 5 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 += 1, t2 += 4 .> <. e2 += 26 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 += 1, t2 += 2 .> <. && e1 += 27, e2 += 25 .> Knot2<t1, e1, t2, e2, d, h>
     | <. case = 8 .>
         <. c = 4 .> <. e = 4 .> NodeList<c,e,s>
         // 4 characters
@@ -194,7 +193,10 @@ WOther ::= "1.0";
 Knot2<t1, e1, t2, e2, d, h> ::=
    Edge<t1, e1, d, h>
    Edge<t2, e2, d, h>
-   <. d += 1 .>
+   <. d += 1 .>  // auto-increment the destination for the next knot
+   // zero variables for next knot
+   <. && t1 -= t1, t2 -= t2 .>
+   <. && e1 -= e1, e2 -= e2 .>
 ;
 
 
