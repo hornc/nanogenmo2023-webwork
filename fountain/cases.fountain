@@ -177,10 +177,21 @@ Graph<case,a,b> ::=
           ) <. e1 += 28 .> Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 3 .>
     | <. case = 11 .>
         // 4 characters, 3 events
-        <. c = 4 .> <. e = 3 .> NodeList<c,e,d>
+        <. c = 4 .> <. e = 3 .> <. d = 26 .> NodeList<c,e,d>
+        <. i = 1 .> {
+          (  <. i = 1 .> <. && t1  = 4, t2  = 2 .>
+            |<. i = 2 .> <. && t1 += 3, t2 += 1 .>
+            |<. i = 3 .> <. && t1 += 1, t2 += 2 .> <. && e1 += 27, e2 += 26 .>
+          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 3 .>
     | <. case = 12 .>
         // 4 characters, 4 events
-        <. c = 4 .> <. e = 4 .> NodeList<c,e,d>
+        <. c = 4 .> <. e = 4 .> <. d = 28 .> NodeList<c,e,d>
+        <. i = 1 .> {
+          (  <. i = 1 .> <. && t1  = 1, t2  = 2 .>
+            |<. i = 2 .> <. && t1 += 1, t2 += 3 .> <. e1 += 28 .>
+            |<. i = 3 .> <. && t1 += 2, t2 += 4 .> <. e1 += 28 .>
+            |<. i = 4 .> <. && t1 += 3, t2 += 4 .> <. && e1 += 29, e2 += 30 .>
+          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 4 .>
     | <. case = 13 .>  // Row of bricks
         // 6 characters, 5 events
         <. c = 6 .> <. e = 5 .> NodeList<c,e,d>
