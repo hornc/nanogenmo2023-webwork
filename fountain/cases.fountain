@@ -61,6 +61,9 @@ Event<a> ::=
     | <. a = 26 .> "26"
     | <. a = 27 .> "27"
     | <. a = 28 .> "28"
+    | <. a = 29 .> "29"
+    | <. a = 30 .> "30"
+    | <. a = 31 .> "31"
 ;
 
 Clist<n> ::=
@@ -145,13 +148,33 @@ Graph<case,a,b> ::=
         <. && t1 += 1, t2 += 2 .> <. && e1 += 27, e2 += 25 .> Knot2<t1, e1, t2, e2, d, h>
     | <. case = 8 .>  // New Threads Born, p. 53
         // 4 characters, 4 events
-        <. c = 4 .> <. e = 4 .> NodeList<c,e,d>
+        <. c = 4 .> <. e = 4 .> <. d = 25 .> NodeList<c,e,d>
+        <. t1  = 3 .> Knot1<t1, e1, d, h>
+        <. t1 += 4 .> Knot1<t1, e1, d, h>
+        <. && t1 += 4, e1 += 26 .> <. && t2 = 3, e2 += 25 .> Knot2<t1, e1, t2, e2, d, h>
+        <. t1 += 1 .> <. && t2 += 2, e2 += 27 .> Knot2<t1, e1, t2, e2, d, h>
     | <. case = 9 .>
         // 6 characters, 4 events
-        <. c = 6 .> <. e = 4 .> NodeList<c,e,d>
+        <. c = 6 .> <. e = 4 .> <. d = 25 .> NodeList<c,e,d>
+        <. i = 1 .> {
+          (  <. i = 1 .> <. && t1  = 3, t2  = 6 .>
+            |<. i = 2 .> <. && t1 += 2, t2 += 5 .>
+            |<. i = 3 .> <. && t1 += 1, t2 += 4 .>
+          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 3 .>
+          <. && t1 += 1, e1 += 27 .>
+          <. && t2 += 2, e2 += 26 .>
+          <. && t3  = 3, e3  = 25 .>
+          Knot3<t1, e1, t2, e2, t3, e3, d, h>
     | <. case = 10 .>
         // 6 characters, 4 events
-        <. c = 6 .> <. e = 4 .> NodeList<c,e,d>
+        <. c = 6 .> <. e = 4 .> <. d = 28 .> NodeList<c,e,d>
+        <. && t1 = 1, t2 = 2 .> <. t3 = 3 .>
+        Knot3<t1, e1, t2, e2, t3, e3, d, h>
+        <. i = 1 .> {
+          (  <. i = 1 .> <. && t1 += 1, t2 += 4 .>
+            |<. i = 2 .> <. && t1 += 2, t2 += 5 .>
+            |<. i = 3 .> <. && t1 += 3, t2 += 6 .>
+          ) <. e1 += 28 .> Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 3 .>
     | <. case = 11 .>
         // 4 characters, 3 events
         <. c = 4 .> <. e = 3 .> NodeList<c,e,d>
@@ -176,6 +199,13 @@ WHero ::= "3.0";
 WOther ::= "1.0";
 
 
+Knot1<t1, e1, d, h> ::=
+   Edge<t1, e1, d, h>
+   <. d += 1 .>
+   <. && t1 -= t1, e1 -= e1 .>
+;
+
+
 Knot2<t1, e1, t2, e2, d, h> ::=
    Edge<t1, e1, d, h>
    Edge<t2, e2, d, h>
@@ -183,6 +213,18 @@ Knot2<t1, e1, t2, e2, d, h> ::=
    // zero variables for next knot
    <. && t1 -= t1, t2 -= t2 .>
    <. && e1 -= e1, e2 -= e2 .>
+;
+
+
+Knot3<t1, e1, t2, e2, t3, e3, d, h> ::=
+   Edge<t1, e1, d, h>
+   Edge<t2, e2, d, h>
+   Edge<t3, e3, d, h>
+   <. d += 1 .>  // auto-increment the destination for the next knot
+   // zero variables for next knot
+   <. && t1 -= t1, e1 -= e1 .>
+   <. && t2 -= t2, e2 -= e2 .>
+   <. && t3 -= t3, e3 -= e3 .>
 ;
 
 
