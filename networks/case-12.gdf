@@ -1,0 +1,18 @@
+nodedef>name VARCHAR,label VARCHAR,time INT
+A, Alice, 0
+B, Bob, 0
+C, Clarise, 0
+D, Dylan, 0
+e28, e28, 28
+e29, e29, 29
+e30, e30, 30
+e31, e31, 31
+edgedef>node1 VARCHAR,node2 VARCHAR,weight DOUBLE
+A, e28, 3.0
+B, e28, 1.0
+e28, e29, 3.0
+C, e29, 1.0
+e28, e30, 1.0
+D, e30, 1.0
+e29, e31, 1.0
+e30, e31, 1.0
