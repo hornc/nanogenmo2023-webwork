@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="335.84238"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-41.226402 -298.570557 335.842377 673.917236" height="673.91724"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path stroke-linecap="round" fill="none" class="id_F id_e24"
+              d="M -7.523840,322.805573 A 216.554277,216.554277 0,0 1,230.840195,272.607880"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_D id_e24"
+              d="M 15.173919,355.046570 A 205.154525,205.154525 0,0 1,230.333832,274.057800"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_E id_e25"
+              d="M -2.276556,-261.806549 A 222.598181,222.598181 0,0 1,243.234741,-210.317825"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_C id_e25"
+              d="M 19.548775,-289.379333 A 211.829266,211.829266 0,0 1,244.224594,-211.117264"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_e24 id_e26"
+              d="M 235.829086,267.531433 A 101.959879,101.959879 0,0 1,253.120636,163.171631"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_B id_e26"
+              d="M 8.076273,152.683563 A 216.678051,216.678051 0,0 1,251.804474,150.183868"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_e25 id_e27"
+              d="M 256.890839,-195.706833 A 100.595655,100.595655 0,0 1,274.144409,-93.007942"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_A id_e27"
+              d="M 8.231184,-94.274887 A 225.033916,225.033916 0,0 1,261.970947,-89.868263"
+              stroke="#000000" stroke-width="3.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_e26 id_e28"
+              d="M 255.840714,146.819946 A 101.356210,101.356210 0,0 1,273.115601,43.195038"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_e27 id_e28"
+              d="M 276.263306,-76.111595 A 100.221458,100.221458 0,0 1,284.884796,27.216354"
+              stroke="#000000" stroke-width="3.0" stroke-opacity="1.0"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="0.0" class="id_A"
+                cy="-88.59619" stroke="#000000" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="0.0" class="id_B"
+                cy="158.58049" stroke="#000000" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="9.951332"
+                class="id_C" cy="-286.5706" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="9.596506"
+                class="id_D" cy="363.3467" stroke="#000000" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="-11.43049"
+                class="id_E" cy="-257.78094" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="-14.287561"
+                class="id_F" cy="330.17117" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="240.0"
+                class="id_e24" cy="276.6201" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="250.0"
+                class="id_e25" cy="-202.95364" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="260.0"
+                class="id_e26" cy="155.91393" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="270.0"
+                class="id_e27" cy="-83.90718" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="280.0"
+                class="id_e28" cy="35.942112" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="24" x="0.0" y="-83.95166" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_A">
+            Alice
+        </text>
+        <text font-size="24" x="0.0" y="163.22502" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_B">
+            Bob
+        </text>
+        <text font-size="24" x="9.951332" y="-281.92606" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_C">
+            Clarise
+        </text>
+        <text font-size="24" x="9.596506" y="369.15335" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_D">
+            Dylan
+        </text>
+        <text font-size="24" x="-11.43049" y="-253.32" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_E">
+            Ernest
+        </text>
+        <text font-size="24" x="-14.287561" y="334.8157" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_F">
+            Fleur
+        </text>
+        <text font-size="24" x="240.0" y="281.15915" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e24">
+            e24
+        </text>
+        <text font-size="24" x="250.0" y="-198.41458" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e25">
+            e25
+        </text>
+        <text font-size="24" x="260.0" y="160.45299" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e26">
+            e26
+        </text>
+        <text font-size="24" x="270.0" y="-79.36812" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e27">
+            e27
+        </text>
+        <text font-size="24" x="280.0" y="40.481174" fill="#a1bf0b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e28">
+            e28
+        </text>
+    </g>
+</svg>
