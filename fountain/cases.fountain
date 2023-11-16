@@ -18,7 +18,7 @@ PlotCombinations ::=
     <. case = 1 .> {
         PlotCase<case>
         <. case += 1 .>
-    } <. case > 10 .>
+    } <. case > 14 .>
 ;
 
 PlotCase<n> ::=
@@ -55,6 +55,10 @@ Prompt<case,a,b> ::=
     | <. case = 8 .>
     | <. case = 9 .>
     | <. case = 10 .>
+    | <. case = 11 .>
+    | <. case = 12 .>
+    | <. case = 13 .>
+    | <. case = 14 .>
     )
 ;
 

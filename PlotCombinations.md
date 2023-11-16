@@ -61,4 +61,28 @@ Alice and Bob have an interaction. Later, because of this interaction, Alice doe
 ### Prompt
 
 ### Chat GPT 3.5 response
+## Case-XI
+### Graph
+![Case XI plot](networks/case-XI.svg)
+### Prompt
+
+### Chat GPT 3.5 response
+## Case-XII
+### Graph
+![Case XII plot](networks/case-XII.svg)
+### Prompt
+
+### Chat GPT 3.5 response
+## Case-XIII
+### Graph
+![Case XIII plot](networks/case-XIII.svg)
+### Prompt
+
+### Chat GPT 3.5 response
+## Case-XIV
+### Graph
+![Case XIV plot](networks/case-XIV.svg)
+### Prompt
+
+### Chat GPT 3.5 response
 
