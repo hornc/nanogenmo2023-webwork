@@ -6,10 +6,9 @@
 Goal ::=
     <. a = 1 .> <. b = 2 .>
     (
-        <. output = 1 .> Graph<case,a,b>
-      | <. output = 2 .> Prompt<case,a,b>
+        <. output = 1 .> Graph<case,a,b,output>
+      | <. output = 2 .>  Graph<case,a,b,output>  // Prompt<case,a,b>
       | <. output = 4 .> PlotCombinations
-
     )
 ;
 
@@ -116,25 +115,28 @@ Roman<n> ::=
     | <. n = 14 .> "XIV"
     | <. n = 15 .> "XV"
 ;
+
 Clist<n> ::=
     <. c = 1 .> {
       Node<c> ", " Character<c> ", 0" #10
       <. c += 1 .> }  <. c > n .>
 ;
 
-NodeList<a, b, s> ::=
+NodeList<a, b, s, output> ::=
     <. n = s .>
-    NodeDef
-    ( <. n = 1 .> | <. n > 1 .> )
-    <. b += n .>
-    Clist<a>
-    {
-      "e" Event<n> ", e" Event<n> ", " Event<n> #10
-      <. n += 1 .> }  <. n >= b .>
-    EdgeDef
+    <. output = 1 .> (
+        NodeDef
+        ( <. n = 1 .> | <. n > 1 .> )
+        <. b += n .>
+       Clist<a>
+       {
+           "e" Event<n> ", e" Event<n> ", " Event<n> #10
+           <. n += 1 .> }  <. n >= b .>
+       EdgeDef
+    ) | <. output = 2 .>
 ;
 
-Graph<case,a,b> ::=
+Graph<case,a,b,output> ::=
     <. h = 1 .>  // set the hero
     <. && e1 = 0, e2 = 0 .>  // default source nodes
     ( <. case = 1 .>
@@ -163,10 +165,10 @@ Graph<case,a,b> ::=
         "e2, e3, 1.0" #10
         "e2, e3, 3.0"
     | <. case = 4 .>
-        <. && c = 3, e = 3 .><. d = 26 .> NodeList<c,e,d>
-        <. && t1  = 2, t2  = 3 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 += 1, t2 += 3 .> <. e2 += 26 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 += 1, t2 += 2 .> <. && e1 += 27, e2 += 26 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && c = 3, e = 3 .><. d = 26 .> NodeList<c,e,d,output>
+        <. && t1  = 2, t2  = 3 .> Knot2<t1, e1, t2, e2, d, h, output>
+        <. && t1 += 1, t2 += 3 .> <. e2 += 26 .> Knot2<t1, e1, t2, e2, d, h, output>
+        <. && t1 += 1, t2 += 2 .> <. && e1 += 27, e2 += 26 .> Knot2<t1, e1, t2, e2, d, h, output>
     | <. case = 5 .>
         // 5 events
         <. && c = 6, e = 5 .> <. d = 24 .> NodeList<c,e,d>
@@ -176,7 +178,7 @@ Graph<case,a,b> ::=
             |<. i = 3 .><. && t1 += 2, t2 += 6 .><. e1 += 24 .>
             |<. i = 4 .><. && t1 += 1, t2 += 5 .><. e1 += 25 .>
             |<. i = 5 .><. && t1 += 2, t2 += 1 .><. && e1 += 26, e2 += 27 .>
-          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 5 .>
+          ) Knot2<t1, e1, t2, e2, d, h, output> <. i += 1 .>} <. i > 5 .>
     | <. case = 6 .>
         // 6 characters, 5 events
         <. && c = 6, e = 5 .> <. d = 24 .> NodeList<c,e,d>
@@ -186,21 +188,21 @@ Graph<case,a,b> ::=
             |<. i = 3 .><. && t1 += 4, t2 += 2 .><. e1 += 24 .>
             |<. i = 4 .><. && t1 += 3, t2 += 1 .><. e1 += 25 .>
             |<. i = 5 .><. && t1 += 2, t2 += 1 .><. && e1 += 26, e2 += 27 .>
-          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 5 .>
+          ) Knot2<t1, e1, t2, e2, d, h, output> <. i += 1 .>} <. i > 5 .>
     | <. case = 7 .>
         // 5 characters, 4 events
         <. && c = 5, e = 4 .> <. d = 25 .> NodeList<c,e,d>
         <. && t1  = 2, t2  = 3 .> Knot2<t1, e1, t2, e2, d, h>
         <. && t1 += 4, t2 += 5 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 += 1, t2 += 4 .> <. e2 += 26 .> Knot2<t1, e1, t2, e2, d, h>
-        <. && t1 += 1, t2 += 2 .> <. && e1 += 27, e2 += 25 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 += 1, t2 += 4 .> <. e2 += 26 .> Knot2<t1, e1, t2, e2, d, h, output>
+        <. && t1 += 1, t2 += 2 .> <. && e1 += 27, e2 += 25 .> Knot2<t1, e1, t2, e2, d, h, output>
     | <. case = 8 .>  // New Threads Born, p. 53
         // 4 characters, 4 events
         <. && c = 4, e = 4 .> <. d = 25 .> NodeList<c,e,d>
         <. t1  = 3 .> Knot1<t1, e1, d, h>
         <. t1 += 4 .> Knot1<t1, e1, d, h>
-        <. && t1 += 4, e1 += 26 .> <. && t2 = 3, e2 += 25 .> Knot2<t1, e1, t2, e2, d, h>
-        <. t1 += 1 .> <. && t2 += 2, e2 += 27 .> Knot2<t1, e1, t2, e2, d, h>
+        <. && t1 += 4, e1 += 26 .> <. && t2 = 3, e2 += 25 .> Knot2<t1, e1, t2, e2, d, h, output>
+        <. t1 += 1 .> <. && t2 += 2, e2 += 27 .> Knot2<t1, e1, t2, e2, d, h, output>
     | <. case = 9 .>
         // 6 characters, 4 events
         <. && c = 6, e = 4 .> <. d = 25 .> NodeList<c,e,d>
@@ -208,7 +210,7 @@ Graph<case,a,b> ::=
           (  <. i = 1 .> <. && t1  = 3, t2  = 6 .>
             |<. i = 2 .> <. && t1 += 2, t2 += 5 .>
             |<. i = 3 .> <. && t1 += 1, t2 += 4 .>
-          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 3 .>
+          ) Knot2<t1, e1, t2, e2, d, h, output> <. i += 1 .>} <. i > 3 .>
           <. && t1 += 1, e1 += 27 .>
           <. && t2 += 2, e2 += 26 .>
           <. && t3  = 3, e3  = 25 .>
@@ -222,7 +224,7 @@ Graph<case,a,b> ::=
           (  <. i = 1 .> <. && t1 += 1, t2 += 4 .>
             |<. i = 2 .> <. && t1 += 2, t2 += 5 .>
             |<. i = 3 .> <. && t1 += 3, t2 += 6 .>
-          ) <. e1 += 28 .> Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 3 .>
+          ) <. e1 += 28 .> Knot2<t1, e1, t2, e2, d, h, output> <. i += 1 .>} <. i > 3 .>
     | <. case = 11 .>
         // 4 characters, 3 events
         <. && c = 4, e = 3 .> <. d = 26 .> NodeList<c,e,d>
@@ -230,7 +232,7 @@ Graph<case,a,b> ::=
           (  <. i = 1 .> <. && t1  = 4, t2  = 2 .>
             |<. i = 2 .> <. && t1 += 3, t2 += 1 .>
             |<. i = 3 .> <. && t1 += 1, t2 += 2 .> <. && e1 += 27, e2 += 26 .>
-          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 3 .>
+          ) Knot2<t1, e1, t2, e2, d, h, output> <. i += 1 .>} <. i > 3 .>
     | <. case = 12 .>
         // 4 characters, 4 events
         <. && c = 4, e = 4 .> <. d = 28 .> NodeList<c,e,d>
@@ -239,7 +241,7 @@ Graph<case,a,b> ::=
             |<. i = 2 .> <. && t1 += 1, t2 += 3 .> <. e1 += 28 .>
             |<. i = 3 .> <. && t1 += 2, t2 += 4 .> <. e1 += 28 .>
             |<. i = 4 .> <. && t1 += 3, t2 += 4 .> <. && e1 += 29, e2 += 30 .>
-          ) Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 4 .>
+          ) Knot2<t1, e1, t2, e2, d, h, output> <. i += 1 .>} <. i > 4 .>
     | <. case = 13 .>  // Row of bricks
         // 6 characters, 5 events
         <. && c = 6, e = 5 .> <. d = 28 .> NodeList<c,e,d>
@@ -250,7 +252,7 @@ Graph<case,a,b> ::=
             |<. i = 3 .> <. && e1 += 29, t2 += 4 .>
             |<. i = 4 .> <. && e1 += 30, t2 += 5 .>
             |<. i = 5 .> <. && e1 += 31, t2 += 6 .>
-          ) <. t1 += 1 .> Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 5 .>
+          ) <. t1 += 1 .> Knot2<t1, e1, t2, e2, d, h, output> <. i += 1 .>} <. i > 5 .>
     | <. case = 14 .>  // XIII (b)
         // 2 characters, 5 events
         <. && c = 2, e = 5 .> <. d = 28 .> NodeList<c,e,d>
@@ -262,7 +264,7 @@ Graph<case,a,b> ::=
             |<. i = 4 .> <. e1 += 30 .>
             |<. i = 5 .> <. e1 += 31 .>
           ) <. e2 += e1 .> <. && t1 += 1, t2 += 2 .>
-            Knot2<t1, e1, t2, e2, d, h> <. i += 1 .>} <. i > 5 .>
+            Knot2<t1, e1, t2, e2, d, h, output> <. i += 1 .>} <. i > 5 .>
     | <. case = 15 .>  // Scheherazade tale, p. 56
         // pseudo-web
         // recursive ? web within a web?
@@ -282,9 +284,15 @@ Knot1<t1, e1, d, h> ::=
 ;
 
 
-Knot2<t1, e1, t2, e2, d, h> ::=
-   Edge<t1, e1, d, h>
-   Edge<t2, e2, d, h>
+Knot2<t1, e1, t2, e2, d, h, output> ::=
+   (
+     <. output = 1 .> (
+         Edge<t1, e1, d, h>
+         Edge<t2, e2, d, h>
+     )
+     | <. output = 2 .> Character<t1> " interacts with " Character<t2> ". "
+   )
+
    <. d += 1 .>  // auto-increment the destination for the next knot
    // zero variables for next knot
    <. && t1 -= t1, t2 -= t2 .>
