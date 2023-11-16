@@ -3,86 +3,108 @@
 ### Graph
 ![Case I plot](networks/case-I.svg)
 ### Prompt
-Clarise takes some action which compels Alice to go to a particular location.
-Dylan takes some action which compels Bob to be in the same location.
-Describe Clarise's action. Describe Dylan's action. Describe Alice going to that location. Describe how Alice interacts with Bob at the location.
+
+A, e1, 3.0
+C, e1, 1.0
+B, e2, 1.0
+D, e2, 1.0
+e1, e3, 3.0
+e2, e3, 1.0
 ### Chat GPT 3.5 response
 ## Case-II
 ### Graph
 ![Case II plot](networks/case-II.svg)
 ### Prompt
-Alice and Bob have an interaction. Later, because of this interaction, Alice does something to Bob. Describe the first interaction. Describe the second interaction.
+
+A, e1, 3.0
+B, e1, 1.0
+e1, e2, 3.0
+e1, e2, 1.0
 ### Chat GPT 3.5 response
 ## Case-III
 ### Graph
 ![Case III plot](networks/case-III.svg)
 ### Prompt
-Alice and Bob have an interaction. Later, because of this interaction, Alice does something to Bob. Still later, a third event occurs between Alice and Bob as a result of this second event. Describe the first interaction. Describe the second interaction. Describe the third interaction
+
+A, e1, 3.0
+B, e1, 1.0
+e1, e2, 3.0
+e1, e2, 1.0
+e2, e3, 1.0
+e2, e3, 3.0
 ### Chat GPT 3.5 response
 ## Case-IV
 ### Graph
 ![Case IV plot](networks/case-IV.svg)
 ### Prompt
-
+ Bob interacts with Clarise. Alice interacts with Clarise. Alice interacts with Bob.
 ### Chat GPT 3.5 response
 ## Case-V
 ### Graph
 ![Case V plot](networks/case-V.svg)
 ### Prompt
-
+ Bob interacts with Dylan. Alice interacts with Clarise. Bob interacts with Fleur. Alice interacts with Ernest. Bob interacts with Alice.
 ### Chat GPT 3.5 response
 ## Case-VI
 ### Graph
 ![Case VI plot](networks/case-VI.svg)
 ### Prompt
-
+ Fleur interacts with Dylan. Ernest interacts with Clarise. Dylan interacts with Bob. Clarise interacts with Alice. Bob interacts with Alice.
 ### Chat GPT 3.5 response
 ## Case-VII
 ### Graph
 ![Case VII plot](networks/case-VII.svg)
 ### Prompt
-
+ Bob interacts with Clarise. Dylan interacts with Ernest. Alice interacts with Dylan. Alice interacts with Bob.
 ### Chat GPT 3.5 response
 ## Case-VIII
 ### Graph
 ![Case VIII plot](networks/case-VIII.svg)
 ### Prompt
 
+C, e25, 1.0
+D, e26, 1.0 Dylan interacts with Clarise. Alice interacts with Bob.
 ### Chat GPT 3.5 response
 ## Case-IX
 ### Graph
 ![Case IX plot](networks/case-IX.svg)
 ### Prompt
-
+ Clarise interacts with Fleur. Bob interacts with Ernest. Alice interacts with Dylan.
+e27, e28, 3.0
+e26, e28, 1.0
+e25, e28, 1.0
 ### Chat GPT 3.5 response
 ## Case-X
 ### Graph
 ![Case X plot](networks/case-X.svg)
 ### Prompt
 
+A, e28, 3.0
+B, e28, 1.0
+C, e28, 1.0 Alice interacts with Dylan. Bob interacts with Ernest. Clarise interacts with Fleur.
 ### Chat GPT 3.5 response
 ## Case-XI
 ### Graph
 ![Case XI plot](networks/case-XI.svg)
 ### Prompt
-
+ Dylan interacts with Bob. Clarise interacts with Alice. Alice interacts with Bob.
 ### Chat GPT 3.5 response
 ## Case-XII
 ### Graph
 ![Case XII plot](networks/case-XII.svg)
 ### Prompt
-
+ Alice interacts with Bob. Alice interacts with Clarise. Bob interacts with Dylan. Clarise interacts with Dylan.
 ### Chat GPT 3.5 response
 ## Case-XIII
 ### Graph
 ![Case XIII plot](networks/case-XIII.svg)
 ### Prompt
-
+ Alice interacts with Bob. Alice interacts with Clarise. Alice interacts with Dylan. Alice interacts with Ernest. Alice interacts with Fleur.
 ### Chat GPT 3.5 response
 ## Case-XIV
 ### Graph
 ![Case XIV plot](networks/case-XIV.svg)
 ### Prompt
-
+ Alice interacts with Bob. Alice interacts with Bob. Alice interacts with Bob. Alice interacts with Bob. Alice interacts with Bob.
 ### Chat GPT 3.5 response
 
