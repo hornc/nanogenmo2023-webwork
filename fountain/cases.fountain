@@ -6,10 +6,31 @@
 Goal ::=
     <. a = 1 .> <. b = 2 .>
     (
-      <. output = 2 .> Prompt<case,a,b>
-      | <. output = 1 .> Graph<case,a,b>
+        <. output = 1 .> Graph<case,a,b>
+      | <. output = 2 .> Prompt<case,a,b>
+      | <. output = 4 .> PlotCombinations
+
     )
 ;
+
+PlotCombinations ::=
+    "# Keeler's 15 Elementary Plot Combinations" #10
+    <. case = 1 .> {
+        PlotCase<case>
+        <. case += 1 .>
+    } <. case > 10 .>
+;
+
+PlotCase<n> ::=
+    <. a = 1 .> <. b = 2 .>
+    "## Case-" Roman<n> #10
+    "### Graph" #10
+    "![Case " Roman<n> " plot](../networks/case-" Roman<n> ".svg)" #10
+    "### Prompt" #10
+    Prompt<n,a,b> #10
+    "### Chat GPT 3.5 response" #10
+;
+
 
 Prompt<case,a,b> ::=
     <. c = 3 .> <. d = 4 .>
@@ -27,6 +48,13 @@ Prompt<case,a,b> ::=
       Character<a> " and " Character<b> " have an interaction. Later, because of this interaction, " Character<a>  " does something to " Character<b> ". "
       "Still later, a third event occurs between " Character<a> " and " Character<b> " as a result of this second event. "
       "Describe the first interaction. Describe the second interaction. Describe the third interaction"
+    | <. case = 4 .>
+    | <. case = 5 .>
+    | <. case = 6 .>
+    | <. case = 7 .>
+    | <. case = 8 .>
+    | <. case = 9 .>
+    | <. case = 10 .>
     )
 ;
 
@@ -67,6 +95,23 @@ Event<a> ::=
     | <. a = 32 .> "32"
 ;
 
+Roman<n> ::=
+      <. n = 1 .> "I"
+    | <. n = 2 .> "II"
+    | <. n = 3 .> "III"
+    | <. n = 4 .> "IV"
+    | <. n = 5 .> "V"
+    | <. n = 6 .> "VI"
+    | <. n = 7 .> "VII"
+    | <. n = 8 .> "VIII"
+    | <. n = 9 .> "IX"
+    | <. n = 10 .> "X"
+    | <. n = 11 .> "XI"
+    | <. n = 12 .> "XII"
+    | <. n = 13 .> "XIII"
+    | <. n = 14 .> "XIV"
+    | <. n = 15 .> "XV"
+;
 Clist<n> ::=
     <. c = 1 .> {
       Node<c> ", " Character<c> ", 0" #10
