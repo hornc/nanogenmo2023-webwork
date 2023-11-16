@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="410.85785"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-32.207901 -216.620483 410.857849 392.426544" height="392.42654"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path stroke-linecap="round" fill="none" class="id_C id_e25"
+              d="M 5.995076,155.802414 A 218.571743,218.571743 0,0 1,240.486893,81.389015"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_D id_e26"
+              d="M 99.427574,-177.300247 A 161.600412,161.600412 0,0 1,250.245819,-83.596985"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_e26 id_e27"
+              d="M 261.299347,-67.391998 A 54.960745,54.960745 0,0 1,273.049438,-19.896297"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_e25 id_e27"
+              d="M 246.349060,75.161652 A 80.774781,80.774781 0,0 1,262.900757,-3.329797"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_A id_e28"
+              d="M 274.017365,-199.701874 A 193.602707,193.602707 0,0 1,365.812256,-4.157075"
+              stroke="#000000" stroke-width="3.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_e27 id_e28"
+              d="M 279.165436,-14.371940 A 79.495770,79.495770 0,0 1,356.714935,-1.130504"
+              stroke="#000000" stroke-width="1.0" stroke-opacity="1.0"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="265.31064"
+                class="id_A" cy="-204.62051" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="0.0" class="id_C"
+                cy="163.8061" stroke="#000000" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="89.4436"
+                class="id_D" cy="-176.73433" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="250.0"
+                class="id_e25" cy="84.47136" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="254.16124"
+                class="id_e26" cy="-74.395386" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="270.0"
+                class="id_e27" cy="-10.37259" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="364.034"
+                class="id_e28" cy="5.683544" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="24" x="265.31064" y="-199.97598" fill="#89ad11"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_A">
+            Alice
+        </text>
+        <text font-size="24" x="0.0" y="168.45064" fill="#89ad11"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_C">
+            Clarise
+        </text>
+        <text font-size="24" x="89.4436" y="-170.92769" fill="#89ad11"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_D">
+            Dylan
+        </text>
+        <text font-size="24" x="250.0" y="89.01042" fill="#89ad11"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e25">
+            e25
+        </text>
+        <text font-size="24" x="254.16124" y="-69.85632" fill="#89ad11"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e26">
+            e26
+        </text>
+        <text font-size="24" x="270.0" y="-5.8335276" fill="#89ad11"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e27">
+            e27
+        </text>
+        <text font-size="24" x="364.034" y="10.222607" fill="#89ad11"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="EB Garamond 08" class="id_e28">
+            e28
+        </text>
+    </g>
+</svg>
