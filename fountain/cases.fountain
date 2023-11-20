@@ -291,7 +291,23 @@ Knot2<t1, e1, t2, e2, d, h, output> ::=
          Edge<t1, e1, d, h>
          Edge<t2, e2, d, h>
      )
-     | <. output = 2 .> " " Character<t1> " interacts with " Character<t2> "."
+     | <. output = 2 .> " " (
+           <. && e1 = 0, e2 = 0 .> Character<t1> " interacts with " Character<t2> "."
+         | <. && e1 > 0, e2 > 0 .> "As a result of their previous interaction" (
+               <. e1 = e2 .> ""
+              |<. e1 > e2 .> "s"
+              |<. e1 < e2 .> "s"
+           )
+           ", " Character<t1> " and " Character<t2> " interact" (
+               <. e1 = e2 .> " again."
+              |<. e1 > e2 .> "."
+              |<. e1 < e2 .> "."
+           )
+         | <. && e1 = 0, e2 > 0 .> "As a result of their previous interaction"
+           ", " Character<t2> " interacts with " Character<t1> "."
+         | <. && e2 = 0, e1 > 0 .> "As a result of their previous interaction"
+           ", " Character<t1> " interacts with " Character<t2> "."
+     )
    )
 
    <. d += 1 .>  // auto-increment the destination for the next knot

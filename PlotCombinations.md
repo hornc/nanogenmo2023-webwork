@@ -37,25 +37,25 @@ e2, e3, 3.0
 ### Graph
 ![Case IV plot](networks/case-IV.svg)
 ### Prompt
- Bob interacts with Clarise. Alice interacts with Clarise. Alice interacts with Bob.
+ Bob interacts with Clarise. As a result of their previous interaction, Clarise interacts with Alice. As a result of their previous interactions, Alice and Bob interact.
 ### Chat GPT 3.5 response
 ## Case-V
 ### Graph
 ![Case V plot](networks/case-V.svg)
 ### Prompt
- Bob interacts with Dylan. Alice interacts with Clarise. Bob interacts with Fleur. Alice interacts with Ernest. Bob interacts with Alice.
+ Bob interacts with Dylan. Alice interacts with Clarise. As a result of their previous interaction, Bob interacts with Fleur. As a result of their previous interaction, Alice interacts with Ernest. As a result of their previous interactions, Bob and Alice interact.
 ### Chat GPT 3.5 response
 ## Case-VI
 ### Graph
 ![Case VI plot](networks/case-VI.svg)
 ### Prompt
- Fleur interacts with Dylan. Ernest interacts with Clarise. Dylan interacts with Bob. Clarise interacts with Alice. Bob interacts with Alice.
+ Fleur interacts with Dylan. Ernest interacts with Clarise. As a result of their previous interaction, Dylan interacts with Bob. As a result of their previous interaction, Clarise interacts with Alice. As a result of their previous interactions, Bob and Alice interact.
 ### Chat GPT 3.5 response
 ## Case-VII
 ### Graph
 ![Case VII plot](networks/case-VII.svg)
 ### Prompt
- Bob interacts with Clarise. Dylan interacts with Ernest. Alice interacts with Dylan. Alice interacts with Bob.
+ Bob interacts with Clarise. Dylan interacts with Ernest. As a result of their previous interaction, Dylan interacts with Alice. As a result of their previous interactions, Alice and Bob interact.
 ### Chat GPT 3.5 response
 ## Case-VIII
 ### Graph
@@ -63,7 +63,7 @@ e2, e3, 3.0
 ### Prompt
 
 C, e25, 1.0
-D, e26, 1.0 Dylan interacts with Clarise. Alice interacts with Bob.
+D, e26, 1.0 As a result of their previous interactions, Dylan and Clarise interact. As a result of their previous interaction, Bob interacts with Alice.
 ### Chat GPT 3.5 response
 ## Case-IX
 ### Graph
@@ -81,30 +81,30 @@ e25, e28, 1.0
 
 A, e28, 3.0
 B, e28, 1.0
-C, e28, 1.0 Alice interacts with Dylan. Bob interacts with Ernest. Clarise interacts with Fleur.
+C, e28, 1.0 As a result of their previous interaction, Alice interacts with Dylan. As a result of their previous interaction, Bob interacts with Ernest. As a result of their previous interaction, Clarise interacts with Fleur.
 ### Chat GPT 3.5 response
 ## Case-XI
 ### Graph
 ![Case XI plot](networks/case-XI.svg)
 ### Prompt
- Dylan interacts with Bob. Clarise interacts with Alice. Alice interacts with Bob.
+ Dylan interacts with Bob. Clarise interacts with Alice. As a result of their previous interactions, Alice and Bob interact.
 ### Chat GPT 3.5 response
 ## Case-XII
 ### Graph
 ![Case XII plot](networks/case-XII.svg)
 ### Prompt
- Alice interacts with Bob. Alice interacts with Clarise. Bob interacts with Dylan. Clarise interacts with Dylan.
+ Alice interacts with Bob. As a result of their previous interaction, Alice interacts with Clarise. As a result of their previous interaction, Bob interacts with Dylan. As a result of their previous interactions, Clarise and Dylan interact.
 ### Chat GPT 3.5 response
 ## Case-XIII
 ### Graph
 ![Case XIII plot](networks/case-XIII.svg)
 ### Prompt
- Alice interacts with Bob. Alice interacts with Clarise. Alice interacts with Dylan. Alice interacts with Ernest. Alice interacts with Fleur.
+ Alice interacts with Bob. As a result of their previous interaction, Alice interacts with Clarise. As a result of their previous interaction, Alice interacts with Dylan. As a result of their previous interaction, Alice interacts with Ernest. As a result of their previous interaction, Alice interacts with Fleur.
 ### Chat GPT 3.5 response
 ## Case-XIV
 ### Graph
 ![Case XIV plot](networks/case-XIV.svg)
 ### Prompt
- Alice interacts with Bob. Alice interacts with Bob. Alice interacts with Bob. Alice interacts with Bob. Alice interacts with Bob.
+ Alice interacts with Bob. As a result of their previous interaction, Alice and Bob interact again. As a result of their previous interaction, Alice and Bob interact again. As a result of their previous interaction, Alice and Bob interact again. As a result of their previous interaction, Alice and Bob interact again.
 ### Chat GPT 3.5 response
 
