@@ -276,10 +276,13 @@ Graph<case,a,b,output> ::=
 // Thread weights
 WHero ::= "3.0";
 WOther ::= "1.0";
-
+TEvent ::= " their previous experience";
 
 Knot1<t1, e1, d, h, output> ::=
-   Edge<t1, e1, d, h>
+   (
+     <. output = 1 .> Edge<t1, e1, d, h>
+    |<. output = 2 .> " An event occurs involving " Character<t1> "."
+   )
    <. d += 1 .>
    <. && t1 -= t1, e1 -= e1 .>
 ;
@@ -293,7 +296,7 @@ Knot2<t1, e1, t2, e2, d, h, output> ::=
      )
      | <. output = 2 .> " " (
            <. && e1 = 0, e2 = 0 .> Character<t1> " interacts with " Character<t2> "."
-         | <. && e1 > 0, e2 > 0 .> "As a result of their previous interaction" (
+         | <. && e1 > 0, e2 > 0 .> "As a result of" TEvent (
                <. e1 = e2 .> ""
               |<. e1 > e2 .> "s"
               |<. e1 < e2 .> "s"
@@ -303,9 +306,9 @@ Knot2<t1, e1, t2, e2, d, h, output> ::=
               |<. e1 > e2 .> "."
               |<. e1 < e2 .> "."
            )
-         | <. && e1 = 0, e2 > 0 .> "As a result of their previous interaction"
+         | <. && e1 = 0, e2 > 0 .> "As a result of" TEvent
            ", " Character<t2> " interacts with " Character<t1> "."
-         | <. && e2 = 0, e1 > 0 .> "As a result of their previous interaction"
+         | <. && e2 = 0, e1 > 0 .> "As a result of" TEvent
            ", " Character<t1> " interacts with " Character<t2> "."
      )
    )
