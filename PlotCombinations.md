@@ -11,6 +11,28 @@ D, e2, 1.0
 e1, e3, 3.0
 e2, e3, 1.0 Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
+Sure, let's create a scenario based on your description:
+
+**Clarise's Action:**
+Clarise, a close friend of Alice, sends her a mysterious letter. In the letter, Clarise writes about a hidden treasure that she claims to have discovered in an old, abandoned mansion on the outskirts of town. She tells Alice that she needs her help to uncover this treasure, hinting at an adventure of a lifetime.
+
+**Dylan's Action:**
+Dylan, who is Bob's coworker, tells him about a rare and valuable book that he's come across during his research at a local library. He shares some intriguing details about the book's contents and mentions that it's said to be located in the same old mansion that Clarise mentioned in her letter to Alice.
+
+**Alice Going to the Location:**
+Intrigued by the mysterious letter from Clarise and the information about the valuable book that Dylan shared, Alice decides to investigate further. She discusses the letter with Bob, who becomes equally curious about the potential treasure and the rare book. They agree to meet up and visit the mansion to uncover the truth behind these intriguing stories.
+
+**Alice and Bob's Interaction at the Location:**
+Alice and Bob arrive at the old, eerie mansion together. They cautiously explore its dark and mysterious rooms, searching for any clues related to the hidden treasure and the rare book. As they navigate the mansion's dusty corridors, their shared adventure draws them closer. They work together to solve puzzles, decipher riddles, and uncover secrets within the mansion.
+
+During their exploration, Alice and Bob share stories, laughter, and even a few moments of fear as they uncover unexpected surprises within the mansion. Their bond deepens as they collaborate in this thrilling adventure, forging a unique connection that goes beyond the initial reason they came to the location. Whether they find the treasure and the rare book or not, the experience of exploring the mansion together creates a memorable and meaningful connection between Alice and Bob.
+
+#### Commentary
+* The AI has let Alice and Bob meet too early, they interact _before_ they go to the mansion, which seems to diminish the chance / surprise of them meeting at the mansion. This version implies that Alice and Bob are already sharing everything that happens with each other, or that A, B, C, and D are all effectively in the same sphere -- it diminishes the "coming together" that the plot threads are supposed to represent.
+* The content is remarkably similar to Keeler's example, down to an old book being involved...
+* The AI has introduced motivating objects that might very well have been represented by a plot line by Keeler. It's possibly my fault that I haven't created a possible distinction between people and objects yet. In Keeler's case-I example, one of the letters and plot lines _was_ the book (a Vindelinus).
+* The AI's ending for Alice and Bob seems very much the same as the case-II cafe scenario ... are all chat GPT endinging this saccharine, or are the two scenarios simplying bleeding together because they exist in the same session?
+* Word count (excuding headings and framing chat): 301 words.
 ## Case-II
 ### Graph
 ![Case II plot](networks/case-II.svg)
@@ -21,6 +43,13 @@ B, e1, 1.0
 e1, e2, 3.0
 e1, e2, 1.0 Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
+**First Interaction:**
+Alice and Bob meet at a coffee shop and strike up a conversation. They talk about their interests, share some laughs, and exchange contact information. They both find the conversation enjoyable and friendly.
+
+The second interaction, where Alice does something to Bob, can take various forms depending on the context and their relationship. Here's one possible scenario:
+
+**Second Interaction:**
+A few days after their initial meeting, Alice invites Bob to an art exhibition she's organizing. Bob gladly accepts the invitation, as he's genuinely interested in art. At the exhibition, Bob is surprised to find a beautiful painting on display, and he discovers that Alice is the artist behind it. This revelation brings them closer, and they spend the evening talking about art, their passions, and their shared interests. As the night progresses, Alice offers to give the painting to Bob as a gesture of their growing connection. Bob is touched by her generosity and is grateful for the meaningful gift. This second interaction strengthens their bond and leads to a deeper connection between Alice and Bob.
 ## Case-III
 ### Graph
 ![Case III plot](networks/case-III.svg)
@@ -93,6 +122,33 @@ This narrative demonstrates how the initial interactions of Clarise and Dylan, f
 ### Prompt
  Clarise interacts with Fleur. Bob interacts with Ernest. Alice interacts with Dylan. An interaction occurs between Alice, Bob, and Clarise. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
+
+**Initial Interactions**
+
+1. **Bob and Ernest:**
+   Bob and Ernest meet at a local coffee shop. They strike up a conversation about their shared interest in photography. Ernest, an experienced photographer, gives Bob some tips on improving his photography skills. They exchange contact information and agree to meet again to go on a photo shoot together.
+
+2. **Alice and Dylan:**
+   Alice and Dylan cross paths at a bookstore where they both happen to be browsing the same section. They discover a mutual love for science fiction literature and spend hours discussing their favorite authors and books. Intrigued by each other's insights, they decide to attend a sci-fi book club together, which Dylan is already a part of.
+
+3. **Fleur and Clarise:**
+   Fleur and Clarise, both passionate about hiking, join a local hiking group. During one of the group's excursions, they find themselves walking side by side, sharing stories of their favorite trails and outdoor experiences. They bond over their love for nature and decide to plan a weekend hiking trip together.
+
+**Final Interaction:**
+
+Alice, Bob, and Clarise find themselves at a community event focused on the arts and culture. The event features a photography exhibition, a sci-fi literature discussion panel, and a presentation on outdoor adventures. Each of our three characters attends the event, drawn by their individual interests.
+
+1. **Bob and Alice:**
+   Bob, with his newfound knowledge from Ernest, is showcasing some of his photographs at the exhibition. Alice, having seen the event details online, attends out of curiosity. She is captivated by Bob's photos and strikes up a conversation with him about his work and the stories behind the images.
+
+2. **Alice and Clarise:**
+   While discussing photography, Alice mentions her interest in outdoor activities. Clarise, who is attending the event after her recent hiking trip with Fleur, overhears the conversation. Intrigued, she joins the discussion, sharing her own experiences and suggesting some picturesque locations for Bob to capture.
+
+3. **Bob, Alice, and Clarise:**
+   As the three continue chatting, they realize the interconnectedness of their interests. Bob, who enjoys outdoor photography, finds common ground with Clarise's hiking experiences. Alice, with her passion for sci-fi literature, discovers that Clarise also has an interest in reading, creating another layer of connection. The trio decides to combine their interests, planning a weekend excursion that includes a photography session, a sci-fi book discussion, and a nature hike. This final interaction brings Bob, Alice, and Clarise together in a unique and unexpected friendship forged through their diverse interests.
+
+#### Commentary
+... It has done a good job coming up with a some story given really no input context. I'll probably need to add _something_ to set a scene or provide some specifc motivations. Keeler's more complex plot tend to involve passive characters, or "objects" in some of the roles which makes things more varied, and will be less about chat GPT's desires to see everyone come together at coffee shops and share interests.
 ## Case-X
 ### Graph
 ![Case X plot](networks/case-X.svg)
