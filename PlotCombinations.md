@@ -9,7 +9,7 @@ C, e1, 1.0
 B, e2, 1.0
 D, e2, 1.0
 e1, e3, 3.0
-e2, e3, 1.0
+e2, e3, 1.0 Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-I.md)
 ## Case-II
@@ -20,7 +20,7 @@ e2, e3, 1.0
 A, e1, 3.0
 B, e1, 1.0
 e1, e2, 3.0
-e1, e2, 1.0
+e1, e2, 1.0 Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-II.md)
 ## Case-III
@@ -33,84 +33,84 @@ B, e1, 1.0
 e1, e2, 3.0
 e1, e2, 1.0
 e2, e3, 1.0
-e2, e3, 3.0
+e2, e3, 3.0 Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-III.md)
 ## Case-IV
 ### Graph
 ![Case IV plot](networks/case-IV.svg)
 ### Prompt
- Bob interacts with Clarise. As a result of their previous experience, Clarise interacts with Alice. As a result of their previous experiences, Alice and Bob interact.
+ Bob interacts with Clarise. As a result of their previous experience, Clarise interacts with Alice. As a result of their previous experiences, Alice and Bob interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-IV.md)
 ## Case-V
 ### Graph
 ![Case V plot](networks/case-V.svg)
 ### Prompt
- Bob interacts with Dylan. Alice interacts with Clarise. As a result of their previous experience, Bob interacts with Fleur. As a result of their previous experience, Alice interacts with Ernest. As a result of their previous experiences, Bob and Alice interact.
+ Bob interacts with Dylan. Alice interacts with Clarise. As a result of their previous experience, Bob interacts with Fleur. As a result of their previous experience, Alice interacts with Ernest. As a result of their previous experiences, Bob and Alice interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-V.md)
 ## Case-VI
 ### Graph
 ![Case VI plot](networks/case-VI.svg)
 ### Prompt
- Fleur interacts with Dylan. Ernest interacts with Clarise. As a result of their previous experience, Dylan interacts with Bob. As a result of their previous experience, Clarise interacts with Alice. As a result of their previous experiences, Bob and Alice interact.
+ Fleur interacts with Dylan. Ernest interacts with Clarise. As a result of their previous experience, Dylan interacts with Bob. As a result of their previous experience, Clarise interacts with Alice. As a result of their previous experiences, Bob and Alice interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-VI.md)
 ## Case-VII
 ### Graph
 ![Case VII plot](networks/case-VII.svg)
 ### Prompt
- Bob interacts with Clarise. Dylan interacts with Ernest. As a result of their previous experience, Dylan interacts with Alice. As a result of their previous experiences, Alice and Bob interact.
+ Bob interacts with Clarise. Dylan interacts with Ernest. As a result of their previous experience, Dylan interacts with Alice. As a result of their previous experiences, Alice and Bob interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-VII.md)
 ## Case-VIII
 ### Graph
 ![Case VIII plot](networks/case-VIII.svg)
 ### Prompt
- An event occurs involving Clarise. An event occurs involving Dylan. As a result of their previous experiences, Dylan and Clarise interact. As a result of their previous experience, Bob interacts with Alice.
+ An event occurs involving Clarise. An event occurs involving Dylan. As a result of their previous experiences, Dylan and Clarise interact. As a result of their previous experience, Bob interacts with Alice. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-VIII.md)
 ## Case-IX
 ### Graph
 ![Case IX plot](networks/case-IX.svg)
 ### Prompt
- Clarise interacts with Fleur. Bob interacts with Ernest. Alice interacts with Dylan. An interaction occurs between Alice, Bob, and Clarise.
+ Clarise interacts with Fleur. Bob interacts with Ernest. Alice interacts with Dylan. An interaction occurs between Alice, Bob, and Clarise. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-IX.md)
 ## Case-X
 ### Graph
 ![Case X plot](networks/case-X.svg)
 ### Prompt
- An interaction occurs between Alice, Bob, and Clarise. As a result of their previous experience, Alice interacts with Dylan. As a result of their previous experience, Bob interacts with Ernest. As a result of their previous experience, Clarise interacts with Fleur.
+ An interaction occurs between Alice, Bob, and Clarise. As a result of their previous experience, Alice interacts with Dylan. As a result of their previous experience, Bob interacts with Ernest. As a result of their previous experience, Clarise interacts with Fleur. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-X.md)
 ## Case-XI
 ### Graph
 ![Case XI plot](networks/case-XI.svg)
 ### Prompt
- Dylan interacts with Bob. Clarise interacts with Alice. As a result of their previous experiences, Alice and Bob interact.
+ Dylan interacts with Bob. Clarise interacts with Alice. As a result of their previous experiences, Alice and Bob interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-XI.md)
 ## Case-XII
 ### Graph
 ![Case XII plot](networks/case-XII.svg)
 ### Prompt
- Alice interacts with Bob. As a result of their previous experience, Alice interacts with Clarise. As a result of their previous experience, Bob interacts with Dylan. As a result of their previous experiences, Clarise and Dylan interact.
+ Alice interacts with Bob. As a result of their previous experience, Alice interacts with Clarise. As a result of their previous experience, Bob interacts with Dylan. As a result of their previous experiences, Clarise and Dylan interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-XII.md)
 ## Case-XIII
 ### Graph
 ![Case XIII plot](networks/case-XIII.svg)
 ### Prompt
- Alice interacts with Bob. As a result of their previous experience, Alice interacts with Clarise. As a result of their previous experience, Alice interacts with Dylan. As a result of their previous experience, Alice interacts with Ernest. As a result of their previous experience, Alice interacts with Fleur.
+ Alice interacts with Bob. As a result of their previous experience, Alice interacts with Clarise. As a result of their previous experience, Alice interacts with Dylan. As a result of their previous experience, Alice interacts with Ernest. As a result of their previous experience, Alice interacts with Fleur. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-XIII.md)
 ## Case-XIV
 ### Graph
 ![Case XIV plot](networks/case-XIV.svg)
 ### Prompt
- Alice interacts with Bob. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again.
+ Alice interacts with Bob. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 [Response](llm-output/case-XIV.md)
 

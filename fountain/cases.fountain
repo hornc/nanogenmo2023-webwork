@@ -271,6 +271,9 @@ Graph<case,a,b,output> ::=
         // pseudo-web
         // recursive ? web within a web?
     )
+    ( <. output = 1 .> ""
+     |<. output = 2 .> GeneratePrompt
+    )
 ;
 
 
@@ -278,6 +281,7 @@ Graph<case,a,b,output> ::=
 WHero ::= "3.0";
 WOther ::= "1.0";
 TEvent ::= " their previous experience";
+GeneratePrompt ::= " Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.";
 
 Knot1<t1, e1, d, h, output> ::=
    (
