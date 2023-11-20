@@ -95,6 +95,12 @@ This narrative illustrates how Bob's initial support for Clarise led to her coll
 ### Prompt
  Bob interacts with Dylan. Alice interacts with Clarise. As a result of their previous experience, Bob interacts with Fleur. As a result of their previous experience, Alice interacts with Ernest. As a result of their previous experiences, Bob and Alice interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
+## Case-VI
+### Graph
+![Case VI plot](networks/case-VI.svg)
+### Prompt
+ Fleur interacts with Dylan. Ernest interacts with Clarise. As a result of their previous experience, Dylan interacts with Bob. As a result of their previous experience, Clarise interacts with Alice. As a result of their previous experiences, Bob and Alice interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+### Chat GPT 3.5 response
 Certainly! Here's a narrative storyline based on the interactions between Fleur, Dylan, Ernest, Clarise, Bob, and Alice as per your prompt:
 
 ---
@@ -122,12 +128,6 @@ In a hidden Parisian gallery, the amalgamation of their talents unfolded before 
 ---
 
 This narrative weaves a tale of artistic connections and collaborative ventures, as each character's previous encounters spark new creative partnerships, leading to an enchanting and innovative art installation in the heart of Paris.
-## Case-VI
-### Graph
-![Case VI plot](networks/case-VI.svg)
-### Prompt
- Fleur interacts with Dylan. Ernest interacts with Clarise. As a result of their previous experience, Dylan interacts with Bob. As a result of their previous experience, Clarise interacts with Alice. As a result of their previous experiences, Bob and Alice interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
-### Chat GPT 3.5 response
 ## Case-VII
 ### Graph
 ![Case VII plot](networks/case-VII.svg)
