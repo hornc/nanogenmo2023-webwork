@@ -67,19 +67,13 @@ e2, e3, 3.0
 ### Graph
 ![Case IX plot](networks/case-IX.svg)
 ### Prompt
- Clarise interacts with Fleur. Bob interacts with Ernest. Alice interacts with Dylan.
-e27, e28, 3.0
-e26, e28, 1.0
-e25, e28, 1.0
+ Clarise interacts with Fleur. Bob interacts with Ernest. Alice interacts with Dylan. An interaction occurs between Alice, Bob, and Clarise.
 ### Chat GPT 3.5 response
 ## Case-X
 ### Graph
 ![Case X plot](networks/case-X.svg)
 ### Prompt
-
-A, e28, 3.0
-B, e28, 1.0
-C, e28, 1.0 As a result of their previous experience, Alice interacts with Dylan. As a result of their previous experience, Bob interacts with Ernest. As a result of their previous experience, Clarise interacts with Fleur.
+ An interaction occurs between Alice, Bob, and Clarise. As a result of their previous experience, Alice interacts with Dylan. As a result of their previous experience, Bob interacts with Ernest. As a result of their previous experience, Clarise interacts with Fleur.
 ### Chat GPT 3.5 response
 ## Case-XI
 ### Graph
