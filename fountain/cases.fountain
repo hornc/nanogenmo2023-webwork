@@ -29,6 +29,7 @@ PlotCase<n> ::=
     <. prompt = 2 .>
     Graph<n,a,b,prompt> #10
     "### Chat GPT 3.5 response" #10
+    "[Response](llm-output/case-" Roman<n> ".md)" #10
 ;
 
 
