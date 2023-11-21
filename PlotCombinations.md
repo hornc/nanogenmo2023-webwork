@@ -3,13 +3,7 @@
 ### Graph
 ![Case I plot](networks/case-I.svg)
 ### Prompt
-
-A, e1, 3.0
-C, e1, 1.0
-B, e2, 1.0
-D, e2, 1.0
-e1, e3, 3.0
-e2, e3, 1.0 Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Clarise. Bob interacts with Dylan. As a result of their previous experiences, Alice and Bob interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 Sure, let's create a scenario based on your description:
 
@@ -37,11 +31,7 @@ During their exploration, Alice and Bob share stories, laughter, and even a few 
 ### Graph
 ![Case II plot](networks/case-II.svg)
 ### Prompt
-
-A, e1, 3.0
-B, e1, 1.0
-e1, e2, 3.0
-e1, e2, 1.0 Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Bob. As a result of their previous experience, Alice and Bob interact again. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 **First Interaction:**
 Alice and Bob meet at a coffee shop and strike up a conversation. They talk about their interests, share some laughs, and exchange contact information. They both find the conversation enjoyable and friendly.
