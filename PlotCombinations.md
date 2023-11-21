@@ -44,13 +44,7 @@ A few days after their initial meeting, Alice invites Bob to an art exhibition s
 ### Graph
 ![Case III plot](networks/case-III.svg)
 ### Prompt
-
-A, e1, 3.0
-B, e1, 1.0
-e1, e2, 3.0
-e1, e2, 1.0
-e2, e3, 1.0
-e2, e3, 3.0 Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Bob. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
 ### Chat GPT 3.5 response
 ## Case-IV
 ### Graph
