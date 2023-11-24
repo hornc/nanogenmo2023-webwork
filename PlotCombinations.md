@@ -3,7 +3,7 @@
 ### Graph
 ![Case I plot](networks/case-I.svg)
 ### Prompt
- Alice interacts with Clarise. Bob interacts with Dylan. As a result of their previous experiences, Alice and Bob interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Clarise. Bob interacts with Dylan. As a direct result of their involvement in the previous incidents, Alice and Bob interact. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 Sure, let's create a scenario based on your description:
 
@@ -31,7 +31,7 @@ During their exploration, Alice and Bob share stories, laughter, and even a few 
 ### Graph
 ![Case II plot](networks/case-II.svg)
 ### Prompt
- Alice interacts with Bob. As a result of their previous experience, Alice and Bob interact again. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Bob. As a direct result of their involvement in the previous incident, Alice and Bob interact again. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 **First Interaction:**
 Alice and Bob meet at a coffee shop and strike up a conversation. They talk about their interests, share some laughs, and exchange contact information. They both find the conversation enjoyable and friendly.
@@ -44,13 +44,13 @@ A few days after their initial meeting, Alice invites Bob to an art exhibition s
 ### Graph
 ![Case III plot](networks/case-III.svg)
 ### Prompt
- Alice interacts with Bob. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Bob. As a direct result of their involvement in the previous incident, Alice and Bob interact again. As a direct result of their involvement in the previous incident, Alice and Bob interact again. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 ## Case-IV
 ### Graph
 ![Case IV plot](networks/case-IV.svg)
 ### Prompt
- Bob interacts with Clarise. As a result of their previous experience, Clarise interacts with Alice. As a result of their previous experiences, Alice and Bob interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Bob interacts with Clarise. As a direct result of their involvement in the previous incident, Clarise interacts with Alice. As a direct result of their involvement in the previous incidents, Alice and Bob interact. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 Certainly! Here's a narrative storyline based on the interactions between Bob, Clarise, and Alice as per your prompt:
 
@@ -77,7 +77,7 @@ This narrative illustrates how Bob's initial support for Clarise led to her coll
 ### Graph
 ![Case V plot](networks/case-V.svg)
 ### Prompt
- Bob interacts with Dylan. Alice interacts with Clarise. As a result of their previous experience, Bob interacts with Fleur. As a result of their previous experience, Alice interacts with Ernest. As a result of their previous experiences, Bob and Alice interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Bob interacts with Dylan. Alice interacts with Clarise. As a direct result of their involvement in the previous incident, Bob interacts with Fleur. As a direct result of their involvement in the previous incident, Alice interacts with Ernest. As a direct result of their involvement in the previous incidents, Bob and Alice interact. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 Certainly! Here's a narrative storyline based on the interactions between Bob, Dylan, Alice, Clarise, Fleur, and Ernest as per your prompt:
 
@@ -110,7 +110,7 @@ This narrative showcases how the initial interactions between Bob, Dylan, Alice,
 ### Graph
 ![Case VI plot](networks/case-VI.svg)
 ### Prompt
- Fleur interacts with Dylan. Ernest interacts with Clarise. As a result of their previous experience, Dylan interacts with Bob. As a result of their previous experience, Clarise interacts with Alice. As a result of their previous experiences, Bob and Alice interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Fleur interacts with Dylan. Ernest interacts with Clarise. As a direct result of their involvement in the previous incident, Dylan interacts with Bob. As a direct result of their involvement in the previous incident, Clarise interacts with Alice. As a direct result of their involvement in the previous incidents, Bob and Alice interact. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 Certainly! Here's a narrative storyline based on the interactions between Fleur, Dylan, Ernest, Clarise, Bob, and Alice as per your prompt:
 
@@ -143,13 +143,13 @@ This narrative weaves a tale of artistic connections and collaborative ventures,
 ### Graph
 ![Case VII plot](networks/case-VII.svg)
 ### Prompt
- Bob interacts with Clarise. Dylan interacts with Ernest. As a result of their previous experience, Dylan interacts with Alice. As a result of their previous experiences, Alice and Bob interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Bob interacts with Clarise. Dylan interacts with Ernest. As a direct result of their involvement in the previous incident, Dylan interacts with Alice. As a direct result of their involvement in the previous incidents, Alice and Bob interact. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 ## Case-VIII
 ### Graph
 ![Case VIII plot](networks/case-VIII.svg)
 ### Prompt
- An event occurs involving Clarise. An event occurs involving Dylan. As a result of their previous experiences, Dylan and Clarise interact. As a result of their previous experience, Bob interacts with Alice. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ An incident occurs involving Clarise. An incident occurs involving Dylan. As a direct result of their involvement in the previous incidents, Dylan and Clarise interact. As a direct result of their involvement in the previous incident, Bob interacts with Alice. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 Certainly! Here's a narrative storyline based on the events involving Clarise, Dylan, Bob, and Alice as per your prompt:
 
@@ -179,7 +179,7 @@ This narrative demonstrates how the initial interactions of Clarise and Dylan, f
 ### Graph
 ![Case IX plot](networks/case-IX.svg)
 ### Prompt
- Clarise interacts with Fleur. Bob interacts with Ernest. Alice interacts with Dylan. An interaction occurs between Alice, Bob, and Clarise. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Clarise interacts with Fleur. Bob interacts with Ernest. Alice interacts with Dylan. An incident occurs involving Alice, Bob, and Clarise. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 
 **Initial Interactions**
@@ -212,7 +212,7 @@ Alice, Bob, and Clarise find themselves at a community event focused on the arts
 ### Graph
 ![Case X plot](networks/case-X.svg)
 ### Prompt
- An interaction occurs between Alice, Bob, and Clarise. As a result of their previous experience, Alice interacts with Dylan. As a result of their previous experience, Bob interacts with Ernest. As a result of their previous experience, Clarise interacts with Fleur. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ An incident occurs involving Alice, Bob, and Clarise. As a direct result of their involvement in the previous incident, Alice interacts with Dylan. As a direct result of their involvement in the previous incident, Bob interacts with Ernest. As a direct result of their involvement in the previous incident, Clarise interacts with Fleur. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 Certainly! Here's a narrative sequence based on the interactions between Alice, Bob, Clarise, Dylan, Ernest, and Fleur as per your prompt:
 
@@ -246,13 +246,13 @@ This narrative illustrates how the initial interaction between Alice, Bob, and C
 ### Graph
 ![Case XI plot](networks/case-XI.svg)
 ### Prompt
- Dylan interacts with Bob. Clarise interacts with Alice. As a result of their previous experiences, Alice and Bob interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Dylan interacts with Bob. Clarise interacts with Alice. As a direct result of their involvement in the previous incidents, Alice and Bob interact. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 ## Case-XII
 ### Graph
 ![Case XII plot](networks/case-XII.svg)
 ### Prompt
- Alice interacts with Bob. As a result of their previous experience, Alice interacts with Clarise. As a result of their previous experience, Bob interacts with Dylan. As a result of their previous experiences, Clarise and Dylan interact. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Bob. As a direct result of their involvement in the previous incident, Alice interacts with Clarise. As a direct result of their involvement in the previous incident, Bob interacts with Dylan. As a direct result of their involvement in the previous incidents, Clarise and Dylan interact. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 I tried switching scene a bit by appending this to the prompt:
 > Suppose the following takes place in Pompeii, 3 months before the eruption of 79AD: 
@@ -280,13 +280,13 @@ This narrative portrays the interactions between Alice, Bob, Clarise, and Dylan 
 ### Graph
 ![Case XIII plot](networks/case-XIII.svg)
 ### Prompt
- Alice interacts with Bob. As a result of their previous experience, Alice interacts with Clarise. As a result of their previous experience, Alice interacts with Dylan. As a result of their previous experience, Alice interacts with Ernest. As a result of their previous experience, Alice interacts with Fleur. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Bob. As a direct result of their involvement in the previous incident, Alice interacts with Clarise. As a direct result of their involvement in the previous incident, Alice interacts with Dylan. As a direct result of their involvement in the previous incident, Alice interacts with Ernest. As a direct result of their involvement in the previous incident, Alice interacts with Fleur. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 ## Case-XIV
 ### Graph
 ![Case XIV plot](networks/case-XIV.svg)
 ### Prompt
- Alice interacts with Bob. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. As a result of their previous experience, Alice and Bob interact again. Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.
+ Alice interacts with Bob. As a direct result of their involvement in the previous incident, Alice and Bob interact again. As a direct result of their involvement in the previous incident, Alice and Bob interact again. As a direct result of their involvement in the previous incident, Alice and Bob interact again. As a direct result of their involvement in the previous incident, Alice and Bob interact again. Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described.  Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described. Do not involve a character in an incident unless they are specifically mentioned.
 ### Chat GPT 3.5 response
 Absolutely! Crafting a narrative with repeated interactions between Alice and Bob will demonstrate how their past experiences motivate subsequent encounters.
 

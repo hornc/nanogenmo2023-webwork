@@ -275,13 +275,16 @@ Graph<case,a,b,output> ::=
 // Thread weights
 WHero ::= "3.0";
 WOther ::= "1.0";
-TEvent ::= " their previous experience";
-GeneratePrompt ::= " Generate a narrative describing each of the events and encounters of the characters in the sequence they are described. Pay attention to how past events motivate later events as suggested by the prompt.";
+TEvent ::= " their involvement in the previous incident";
+GeneratePrompt ::= " Craft a narrative describing each of the incidents and interactions of the characters in the sequence they are described. "
+                   " Emphasise and explain with detail how plot incidents directly result from, and are vitally dependent on others, as described."
+                   " Do not involve a character in an incident unless they are specifically mentioned."
+;
 
 Knot1<t1, e1, d, h, output> ::=
    (
      <. output = 1 .> Edge<t1, e1, d, h>
-    |<. output = 2 .> " An event occurs involving " Character<t1> "."
+    |<. output = 2 .> " An incident occurs involving " Character<t1> "."
    )
    <. d += 1 .>
    <. && t1 -= t1, e1 -= e1 .>
@@ -296,7 +299,7 @@ Knot2<t1, e1, t2, e2, d, h, output> ::=
      )
      | <. output = 2 .> " " (
            <. && e1 = 0, e2 = 0 .> Character<t1> " interacts with " Character<t2> "."
-         | <. && e1 > 0, e2 > 0 .> "As a result of" TEvent (
+         | <. && e1 > 0, e2 > 0 .> "As a direct result of" TEvent (
                <. e1 = e2 .> ""
               |<. e1 > e2 .> "s"
               |<. e1 < e2 .> "s"
@@ -306,9 +309,9 @@ Knot2<t1, e1, t2, e2, d, h, output> ::=
               |<. e1 > e2 .> "."
               |<. e1 < e2 .> "."
            )
-         | <. && e1 = 0, e2 > 0 .> "As a result of" TEvent
+         | <. && e1 = 0, e2 > 0 .> "As a direct result of" TEvent
            ", " Character<t2> " interacts with " Character<t1> "."
-         | <. && e2 = 0, e1 > 0 .> "As a result of" TEvent
+         | <. && e2 = 0, e1 > 0 .> "As a direct result of" TEvent
            ", " Character<t1> " interacts with " Character<t2> "."
      )
    )
@@ -328,7 +331,7 @@ Knot3<t1, e1, t2, e2, t3, e3, d, h, output> ::=
           Edge<t3, e3, d, h>
       )
       | <. output = 2 .>
-        " An interaction occurs between " Character<t1> ", " Character<t2> ", and " Character<t3> "."
+        " An incident occurs involving " Character<t1> ", " Character<t2> ", and " Character<t3> "."
 
    )
    <. d += 1 .>  // auto-increment the destination for the next knot
